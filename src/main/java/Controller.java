@@ -1,6 +1,8 @@
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
+import java.awt.event.ActionEvent;
+
 public class Controller {
 
     @FXML
@@ -11,4 +13,7 @@ public class Controller {
 
     }
 
+    public void closeProgram(javafx.event.ActionEvent actionEvent) {
+        System.exit(0);
+    }
 }
