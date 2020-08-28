@@ -5,15 +5,17 @@
 <?import javafx.scene.layout.Pane?>
 
 <?import javafx.scene.control.Button?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="318.0" stylesheets="@../../../build/resources/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0"
+      prefWidth="318.0" stylesheets="@../../../build/resources/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
     <children>
         <Button layoutY="270" layoutX="280" text="Exit" onAction="#closeProgram"/>
-      <TabPane prefHeight="298.0" prefWidth="318.0" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab text="Production Log" />
-          <Tab text="Product Line" />
-          <Tab text="Produce" />
-        </tabs>
-      </TabPane>
+        <TabPane prefHeight="298.0" prefWidth="318.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Production Log"/>
+                <Tab text="Product Line"/>
+                <Tab text="Produce"/>
+            </tabs>
+        </TabPane>
     </children>
 </Pane>
