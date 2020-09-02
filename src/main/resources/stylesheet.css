@@ -1,0 +1,17 @@
+.root {
+    -fx-font-family: "Droid Serif";
+    -fx-font-style: normal;
+    -fx-border-color: black;
+}
+
+.tab-pane {
+    -fx-font-family: "Droid Serif";
+    -fx-background-color: #ba142c;
+}
+
+.button {
+    -fx-alignment: bottom-right;
+    -fx-font-weight: bold;
+    -fx-text-fill: #695fff;
+}
+

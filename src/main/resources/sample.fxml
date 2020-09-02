@@ -2,20 +2,13 @@
 
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.layout.Pane?>
 
-<?import javafx.scene.control.Button?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0"
-      prefWidth="318.0" stylesheets="@../../../build/resources/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
-    <children>
-        <Button layoutY="270" layoutX="280" text="Exit" onAction="#closeProgram"/>
-        <TabPane prefHeight="298.0" prefWidth="318.0" tabClosingPolicy="UNAVAILABLE">
-            <tabs>
-                <Tab text="Production Log"/>
-                <Tab text="Product Line"/>
-                <Tab text="Produce"/>
-            </tabs>
-        </TabPane>
-    </children>
-</Pane>
+<TabPane prefHeight="385.0" prefWidth="424.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab text="Production Line" />
+      <Tab text="Produce" />
+      <Tab text="Production Log" />
+   </tabs>
+</TabPane>
+
+
