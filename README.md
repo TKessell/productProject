@@ -12,10 +12,10 @@ This is my first project of OOP (COP 3003), a simple JavaFX window that shows a 
 - [x] Add a CSS file with some code
 ## Week 3 Expectations 
 * Product Line tab
-- [ ] In the AnchorPane
-- [ ] Add a 2x3 GridPane
-- [ ] Add a Label and text field for Product Name in row 0, columns 0 and 1
-- [ ] Add a Label and text field for Manufacturer in row 1, columns 0 and 1
+- [x] In the AnchorPane
+- [x] Add a 2x3 GridPane
+- [x] Add a Label and text field for Product Name in row 0, columns 0 and 1
+- [x] Add a Label and text field for Manufacturer in row 1, columns 0 and 1
 - [ ] Add a Label and ChoiceBox for Item Type in row 2, columns 0 and 1
 - [ ] Add a Button that says Add Product
 - [ ] Add an event handler to the button click event. For now, just have it print to the console (System.out.println)
