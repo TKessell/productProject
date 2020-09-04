@@ -3,6 +3,7 @@
 
 This is my first project of OOP (COP 3003), a simple JavaFX window that shows a product log, product line, and products
 
+# Spring 1
 ## Week 1 Expectations
 - [x] Create JavaFX FXML project using Gradle
 - [x] Share to private repository on GitHub
@@ -16,15 +17,15 @@ This is my first project of OOP (COP 3003), a simple JavaFX window that shows a 
 - [x] Add a 2x3 GridPane
 - [x] Add a Label and text field for Product Name in row 0, columns 0 and 1
 - [x] Add a Label and text field for Manufacturer in row 1, columns 0 and 1
-- [ ] Add a Label and ChoiceBox for Item Type in row 2, columns 0 and 1
-- [ ] Add a Button that says Add Product
-- [ ] Add an event handler to the button click event. For now, just have it print to the console (System.out.println)
-- [ ] Add a Label and a Table View for Existing Products
+- [x] Add a Label and ChoiceBox for Item Type in row 2, columns 0 and 1
+- [x] Add a Button that says Add Product
+- [x] Add an event handler to the button click event. For now, just have it print to the console (System.out.println)
+- [x] Add a Label and a Table View for Existing Products
 * Produce tab
-- [ ] In the AnchorPane
-- [ ] Add a Label and ListView for Choose Product
-- [ ] Add a Label and ComboBox (data type String) for Choose Quantity
-- [ ] Add a Button that says Record Production
+- [x] In the AnchorPane
+- [x] Add a Label and ListView for Choose Product
+- [x] Add a Label and ComboBox (data type String) for Choose Quantity
+- [x] Add a Button that says Record Production
 * Production Log tab
-- [ ] In the AnchorPane
-- [ ] Add a TextArea
+- [x] In the AnchorPane
+- [x] Add a TextArea
