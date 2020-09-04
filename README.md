@@ -29,3 +29,20 @@ This is my first project of OOP (COP 3003), a simple JavaFX window that shows a 
 * Production Log tab
 - [x] In the AnchorPane
 - [x] Add a TextArea
+## Week 4 Expectations
+
+- [x] Install database software if necessary
+- [ ] Connect to database 
+  * If not using Gradle or Maven, to make your program more portable, copy the H2 driver jar file from its install location (likely Program Files (x86) H2 bin), paste it into your res folder, and set this location in the IntelliJ Project Structure (Modules -> Dependencies).  
+ 
+## Week 5 EXpectations 
+- [ ] In the Product Line tab, for the Add Product button event handler, add code to insert a product into the database
+* Hard code this statement INSERT INTO Product(type, manufacturer, name) VALUES ( 'AUDIO', 'Apple', 'iPod' );
+- [ ] Build the sql statement by getting the values from the user interface.
+- [ ] (To avoid a FingBugs error) Use a Prepared Statement.
+- [ ] Output the full list of products to the console. 
+- [ ] In the Produce tab, for the ComboBox:
+* Populate with values 1-10 in an initialize method in the Controller
+* To allow the users to enter other values in the combobox, call the method setEditable(true);
+* To show a default value, call the method getSelectionModel().selectFirst();
+* Prepare for submission
