@@ -3,7 +3,7 @@
 
 This is my first project of OOP (COP 3003), a simple JavaFX window that shows a product log, product line, and products
 
-# Spring 1
+# Sprint 1
 ## Week 1 Expectations
 - [x] Create JavaFX FXML project using Gradle
 - [x] Share to private repository on GitHub
