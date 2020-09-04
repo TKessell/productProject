@@ -1,19 +1,20 @@
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-import java.awt.event.ActionEvent;
 
 public class Controller {
 
-    @FXML
-    private Label lblOutput;
+  @FXML
+  private void fill() {
+  }
 
-    public void sayHello() {
-        lblOutput.setText("Hello FXML!");
+  public void addProduct(ActionEvent actionEvent) {
+    System.out.println("Acknowledged");
+  }
 
-    }
-
-    public void closeProgram(javafx.event.ActionEvent actionEvent) {
-        System.exit(0);
-    }
+  public void recordRecord(ActionEvent actionEvent) {
+    System.out.println("Recorded");
+  }
 }
