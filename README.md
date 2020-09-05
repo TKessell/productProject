@@ -32,8 +32,7 @@ This is my first project of OOP (COP 3003), a simple JavaFX window that shows a 
 ## Week 4 Expectations
 
 - [x] Install database software if necessary
-- [ ] Connect to database 
-   * If not using Gradle or Maven, to make your program more portable, copy the H2 driver jar file from its install location (likely Program Files (x86) H2 bin), paste it into your res folder, and set this location in the IntelliJ Project Structure (Modules -> Dependencies).  
+- [x] Connect to database   
  
 ## Week 5 Expectations 
 - [ ] In the Product Line tab, for the Add Product button event handler, add code to insert a product into the database
