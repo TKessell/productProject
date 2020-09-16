@@ -35,7 +35,7 @@ This is my first project of OOP (COP 3003), a simple JavaFX window that shows a 
 - [x] Connect to database   
  
 ## Week 5 Expectations 
-- [ ] In the Product Line tab, for the Add Product button event handler, add code to insert a product into the database
+- [x] In the Product Line tab, for the Add Product button event handler, add code to insert a product into the database
    * Hard code this statement INSERT INTO Product(type, manufacturer, name) VALUES ( 'AUDIO', 'Apple', 'iPod' );
 - [ ] Build the sql statement by getting the values from the user interface.
 - [ ] (To avoid a FingBugs error) Use a Prepared Statement.
