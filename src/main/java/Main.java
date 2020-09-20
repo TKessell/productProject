@@ -1,3 +1,8 @@
+/*
+author: domenic kessell
+brief:  driver class for javafx GUI program
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
