@@ -10,11 +10,17 @@ public class Screen implements ScreenSpec {
     responseTime = responseTimeIn;
   }
 
-  public String getResolution() { return resolution; }
+  public String getResolution() {
+    return resolution;
+  }
 
-  public int getRefreshRate() { return refreshRate; }
+  public int getRefreshRate() {
+    return refreshRate;
+  }
 
-  public int getResponseTime() { return responseTime; }
+  public int getResponseTime() {
+    return responseTime;
+  }
 
   public String toString() {
     return "\nResolution: " + resolution + "\nRefresh Rate: " + refreshRate

@@ -15,7 +15,9 @@ public class AudioPlayer extends Product implements MultimediaControl {
         + "\nSupported Playlist Formats: " + supportedPlaylistFormats;
   }
 
-  public void play() { System.out.println("Playing"); }
+  public void play() {
+    System.out.println("Playing");
+  }
 
   public void stop() {
     System.out.println("Stopping");

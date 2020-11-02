@@ -22,11 +22,17 @@ public class Product implements Item {
     return "Name: " + name + "\nManufacturer: " + manufacturer + "\nType: " + getType();
   }
 
-  public void setType(ItemType typeIn) { type = typeIn; }
+  public void setType(ItemType typeIn) {
+    type = typeIn;
+  }
 
-  public ItemType getType(){return type;}
+  public ItemType getType() {
+    return type;
+  }
 
-  public void setID(int idIn){id = idIn;}
+  public void setID(int idIn) {
+    id = idIn;
+  }
 
   public int getId() {
     return id;

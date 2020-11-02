@@ -3,7 +3,7 @@ import java.util.Date;
 public class ProductionRecord {
 
   //statics will stay the same no matter how many objects you create
-  private Product product;
+  //private Product product;
   private static int productionNumber = 0;
   private int productID;
   private String serialNumber;
@@ -54,10 +54,10 @@ public class ProductionRecord {
   //week 10 constructor
   public ProductionRecord(Product prod, int prodCount) {
     productionNumber++;
-    this.product = prod;
+    //this.product = prod;
     //productID = prod.getId();
-    String sub = prod.getManufacturer().substring(0,3);
-    serialNumber = sub + prod.getType().getCode() + String.format("%04d", productionNumber);
+    String sub = prod.getManufacturer().substring(0, 3);
+    serialNumber = sub + prod.getType().getCode() + String.format("%05d", productionNumber);
     dateProduced = new Date();
   }
 
