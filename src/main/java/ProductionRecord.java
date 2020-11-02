@@ -2,7 +2,9 @@ import java.util.Date;
 
 public class ProductionRecord {
 
-  private int productionNumber = 0;
+  //statics will stay the same no matter how many objects you create
+  private Product product;
+  private static int productionNumber = 0;
   private int productID;
   private String serialNumber;
   private Date dateProduced;
@@ -41,34 +43,35 @@ public class ProductionRecord {
     return dateProduced;
   }
 
-  //default constructor
+ /* //default constructor
   public ProductionRecord(int prodIDInConstruct) {
     productID = prodIDInConstruct;
     productionNumber++;
     serialNumber = "0";
     dateProduced = new Date();
-  }
+  }*/
 
   //week 10 constructor
   public ProductionRecord(Product prod, int prodCount) {
     productionNumber++;
-    productID = prod.getId();
+    this.product = prod;
+    //productID = prod.getId();
     String sub = prod.getManufacturer().substring(0,3);
-    serialNumber = sub + prod.getType().getCode() + "0000" + productionNumber;
+    serialNumber = sub + prod.getType().getCode() + String.format("%04d", productionNumber);
     dateProduced = new Date();
   }
 
-  //all fields constructor. Ctr = constructor
+  /*//all fields constructor. Ctr = constructor
   public ProductionRecord(int prodNumInCtr, int prodIDInCtr, String sNumInCtr, Date dateInCtr) {
     productionNumber = prodNumInCtr;
     productID = prodIDInCtr;
     serialNumber = sNumInCtr;
     dateProduced = dateInCtr;
-  }
+  }*/
 
   public String toString() {
-    return "Prod. Num: " + getProductionNumber() + " Product ID: " + getProductID() + " Serial Num: "
-        + getSerialNumber() + " Date: " + getDateProduced() + "\n";
+    return "Prod. Num: " + productionNumber + " Product ID: " + productID + " Serial Num: "
+        + serialNumber + " Date: " + dateProduced + "\n";
   }
 
 }

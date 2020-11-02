@@ -47,7 +47,8 @@ public class Controller {
   @FXML
   private Button btnRecord;
   @FXML
-  private TextArea prodTextArea;
+  private TextArea prodLogArea;
+
   //table columns
   @FXML
   private TableView<Product> tableColumn;
@@ -69,20 +70,19 @@ public class Controller {
   }
 
   //Add items to list view in Produce Tab
-  private void setupProduceListView(){
+  private void setupProduceListView() {
     prodMenu.setItems(productLine);
   }
 
   //Add items to table column in Production Line Tab
-  void setupProductLineTable()
-  {
+  void setupProductLineTable() {
     String name = pName.getText();
     String manu = pManu.getText();
     String type = pType.getValue();
 
-    tableName.setCellValueFactory(new PropertyValueFactory("Name"));
-    tableManu.setCellValueFactory(new PropertyValueFactory("Manufacturer"));
-    tableType.setCellValueFactory(new PropertyValueFactory("Type"));
+    tableName.setCellValueFactory(new PropertyValueFactory("name"));
+    tableManu.setCellValueFactory(new PropertyValueFactory("manufacturer"));
+    tableType.setCellValueFactory(new PropertyValueFactory("type"));
 
     Product prodTemp = new Product(name, manu, ItemType.valueOf(type));
     productLine.add(prodTemp);
@@ -91,20 +91,19 @@ public class Controller {
 
   @FXML
   public void recordProd(ActionEvent event) {
-    int numProds = Integer.valueOf(cmbQuantity.getSelectionModel().getSelectedItem());
-    String name = pName.getText();
-    String manu = pManu.getText();
-    String type = pType.getValue();
+    int numProds = Integer.parseInt(cmbQuantity.getValue());
+    int selected = prodMenu.getSelectionModel().getSelectedIndex();
+
     for (int i = 0; i < numProds; i++) {
-      System.out.println("in record prod");
+      //System.out.println("in record prod");
+      //temp.setID(5);
       //Date day = new Date();
-      Product temp = new Product(name, manu, ItemType.valueOf(type));
-      ProductionRecord record = new ProductionRecord(temp, 1);
+      ProductionRecord record = new ProductionRecord(productLine.get(selected), numProds);
       //System.out.println(record.toString());
-      prodTextArea.appendText(record.toString());
+      prodLogArea.appendText(record.toString());
     }
   }
-    //Product prodProduced = prodMenu.getSelectionModel().getSelectedItems();
+  //Product prodProduced = prodMenu.getSelectionModel().getSelectedItems();
 
   //initialize method sets the combo box range of numbers. it is editable
   public void initialize() {
@@ -114,8 +113,9 @@ public class Controller {
       cmbQuantity.getItems().add(Integer.toString(x));
     }
     cmbQuantity.getSelectionModel().selectFirst();
-    for(ItemType items : ItemType.values())
+    for (ItemType items : ItemType.values()) {
       pType.getItems().add(String.valueOf(items));
+    }
     //ProductionRecord record = new ProductionRecord(0);
     //prodTextArea.setText(record.toString());
   }
@@ -156,7 +156,7 @@ public class Controller {
         System.out.println(rs.getString(4));
       }
 
-      stmt.executeUpdate(sql);
+      //stmt.executeUpdate(sql);
       stmt.close();
       conn.close();
 

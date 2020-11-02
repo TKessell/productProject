@@ -1,6 +1,6 @@
 public class Product implements Item {
 
-  private int id;
+  private int id = 0;
   private String name;
   private String manufacturer;
   private ItemType type;
@@ -26,6 +26,8 @@ public class Product implements Item {
 
   public ItemType getType(){return type;}
 
+  public void setID(int idIn){id = idIn;}
+
   public int getId() {
     return id;
   }
@@ -49,10 +51,10 @@ public class Product implements Item {
 
 }
 
-/*
+
 class Widget extends Product {
 
   public Widget(String name, String manufacturer, ItemType type) {
     super(name, manufacturer, type);
   }
-}*/
+}
