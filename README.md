@@ -7,7 +7,7 @@ I began working on this project during the first week of my Fall 2020 Semester. 
 I made this project for a semester-long assignment, where each week a new challenge was overcome and the program was refined to incorporate various elements of object oriented programming, like classes, interfaces, enums, and security measures.
 
 # Documentation
-[JavaDoc](file:///C:/Users/Asterenn/OneDrive%20-%20Florida%20Gulf%20Coast%20University/Year%202/COP%203003/IdeaProjects/gradleDemo/docs/AudioPlayer.html)
+[JavaDoc](https://tkessell.github.io/productProject/docs/package-summary.html)
 
 # Diagrams
 ![Alt text](https://github.com/TKessell/productProject/blob/master/Demo.png)
