@@ -1,3 +1,7 @@
+//author: domenic kessell
+//purpose: interface to be implemented by Product class
+
+
 public interface Item {
 
   public int getId();

@@ -1,3 +1,7 @@
+//author: domenic kessell
+//purpose: enum outlining the possible item types for a Product object
+
+
 public enum ItemType {
   AUDIO("AU"),
   VISUAL("VI"),

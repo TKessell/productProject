@@ -1,3 +1,7 @@
+//author: domenic kessell
+//purpose: class that implements item interface. displays the name, manufacturer, and type of product to the user
+
+
 public class Product implements Item {
 
   private int id = 0;

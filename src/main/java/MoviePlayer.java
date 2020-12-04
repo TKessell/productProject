@@ -1,3 +1,7 @@
+//author: domenic kessell
+//purpose: class that implements multimediacontrol interface. displays the screen and monitor types to the user
+
+
 public class MoviePlayer extends Product implements MultimediaControl {
 
   Screen screen;

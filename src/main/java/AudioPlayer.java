@@ -1,3 +1,6 @@
+//author: domenic kessell
+//purpose: class that implements multimediacontrol interface. displays supported audio and playlist formats to the user
+
 public class AudioPlayer extends Product implements MultimediaControl {
 
   private String supportedAudioFormats;

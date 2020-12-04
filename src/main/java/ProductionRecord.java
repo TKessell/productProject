@@ -1,3 +1,7 @@
+//author: domenic kessell
+//purpose: class that keeps a record of all produced products entered by the user in the application
+
+
 import java.util.Date;
 
 public class ProductionRecord {

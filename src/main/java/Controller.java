@@ -1,7 +1,6 @@
-/*
-author: domenic kessell
-brief:  controller file for all GUI elements and methods
- */
+//author: domenic kessell
+//brief:  controller file for all GUI elements and methods
+
 
 
 import java.util.Date;

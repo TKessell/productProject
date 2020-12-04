@@ -1,3 +1,7 @@
+//author: domenic kessell
+//purpose: class that implements screenspec interface. displays resolution, refresh rate, and response time to the user
+
+
 public class Screen implements ScreenSpec {
 
   private String resolution;
